@@ -10,114 +10,127 @@
 
 <body>
   <div class ="container">
-    <h1>Rowing Quiz</h1>
+
     <div class ="row">
-      <div class ="col-md-8">
+      <h1>Rowing Quiz</h1>
+      <div class ="col-mb-8">
         <p>What do you know about rowing? Take this quiz and test your knowledge! You can find out about the sport in this <a href="https://en.wikipedia.org/wiki/Rowing_(sport)" target="_blank">Wikipedia article</a>.</p>
+      </div>
 
 
-        <form>
 
-          <div class ="mb-3">
+      <form>
 
-          <label for="stateAnswer" class="form-label ">What state was the earliest American rowing race in?</label>
-          <input id="stateAnswer" class= "form-text"
-          <div id="stateAnswerHelper" class="form-text">Please enter a U.S. state
-          </div>
+        <div class ="mb-3">
 
-          <div class ="mb-3">
+          <label for="stateAnswer" class="form-label ">Which state was the earliest American rowing race in?</label>
+          <input id="stateAnswer" name="stateAnswer" class= "form-text" type="text">
+
+        </div>
+
+        <div class ="mb-3">
 
           <label for="rowingName" class="form-label">What is rowing sometimes called in the United States?</label>
-          <input id="rowingName" class= "form-text"
-          <div id="stateAnswerHelper" class="form-text">Please enter a word
-          </div>
+          <input id="rowingName" name="stateAnswer" class= "form-text" type="text">
 
-          <div class ="mb-3">
+        </div>
+
+        <div class ="mb-3">
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">What is proper rowing technique? Please describe each step.</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="techniqueAnswer">What is proper rowing technique? Please describe each step.</label>
+            <textarea class="form-control" id="techniqueAnswer" name="techniqueAnswer" rows="3"></textarea>
           </div>
-        </form>
-
-          <div class ="mb-3">
-
-        <p>Where did modern rowing as a competitive sport originate?</p>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDef"
-          <label class="form-check-label" for="flexRadioDefault1">
-            Hudson River in New York
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDef"
-          <label class="form-check-label" for="flexRadioDefault2">
-            St. John's River in Florida
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDef"
-          <label class="form-check-label" for="flexRadioDefault3">
-            River Thames in London
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDef"
-          <label class="form-check-label" for="flexRadioDefault4">
-            Lazy River at Daytona Lagoon
-          </label>
         </div>
 
-          <div class ="mb-3">
+        <div class ="mb-3">
 
-        <p>What are the two ways to row?</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Paddling
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"
-          <label class="form-check-label" for="defaultCheck2">
-            Sweep rowing
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
-          <label class="form-check-label" for="defaultCheck3">
-            Drawing
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4"
-          <label class="form-check-label" for="defaultCheck4">
-            Sculling
-          </label>
-        </div>
-
-          <div class ="mb-3">
-
-
-        <p>What was the first American college to form a rowing club?</p>
-        <select class="form-select" label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">Harvard University</option>
-          <option value="2">Yale University</option>
-          <option value="3">Brown University</option>
-          <option value="4">University of Florida</option>
-          <option value="5">Dartmouth College</option>
-          <option value="6">Princeton University</option>
-        </select>
-
-          <div class ="mb-3">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <p>Where did modern rowing as a competitive sport originate?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="originRadio" id="flexRadio1">
+            <label class="form-check-label" for="flexRadio1">
+              Hudson River in New York
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="originRadio" id="flexRadio2">
+            <label class="form-check-label" for="flexRadio2">
+              St. John's River in Florida
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="originRadio" id="flexRadio3">
+            <label class="form-check-label" for="flexRadio3">
+              River Thames in London
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="originRadio" id="flexRadio4">
+            <label class="form-check-label" for="flexRadio4">
+              Yellow River in China
+            </label>
+          </div>
         </div>
 
-        <p>Add reset input button</p>
 
-      </form>
+        <div class ="mb-3">
+
+          <p>What are the two ways to row?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Paddling" id="paddlingCheck" name="twoWays">
+            <label class="form-check-label" for="paddlingCheck">
+              Paddling
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Sweep rowing" id="sweepCheck" name="twoWays">
+            <label class="form-check-label" for="sweepCheck">
+              Sweep rowing
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Drawing" id="drawingCheck" name="twoWays">
+            <label class="form-check-label" for="drawingCheck">
+              Drawing
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Sculling" id="scullingCheck" name="twoWays">
+            <label class="form-check-label" for="scullingCheck">
+              Sculling
+            </label>
+          </div>
+        </div>
+
+        <div class ="mb-3">
 
 
-    </body>
-    </html>
+          <p>What was the first American college to form a rowing club?</p>
+          <select class="form-select">
+            <option selected>Choose your answer</option>
+            <option value="Harvard University">Harvard University</option>
+            <option value="Yale University">Yale University</option>
+            <option value="Brown University">Brown University</option>
+            <option value="University of Florida">University of Florida</option>
+            <option value="Dartmouth College">Dartmouth College</option>
+            <option value="Princeton University">Princeton University</option>
+          </select>
+
+        </div>
+
+        <div class ="mb-3">
+
+          <button class="btn btn-primary" type="submit" value="submit">Submit form</button>
+
+          <button type="reset" class="btn btn-secondary" value="reset">Reset</button>
+
+        </div>
+      </div>
+    </div>
+
+
+  </form>
+
+
+</body>
+</html>
