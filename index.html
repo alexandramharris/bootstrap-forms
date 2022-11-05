@@ -9,45 +9,46 @@
 </head>
 
 <body>
-  <div class ="container">
+  <div class ="container pl-4 pr-4 pt-2 pb-2">
 
     <div class ="row">
-      <h1 class="mx-auto">Rowing Quiz</h1>
+      <div class="mx-auto text-center w-75">
+      <h1>Rowing Quiz</h1>
       <div class ="col-mb-3">
-        <p class="mx-auto">What do you know about rowing? Take this quiz and test your knowledge! You can find out more about the sport in this <a href="https://en.wikipedia.org/wiki/Rowing_(sport)" target="_blank">Wikipedia article</a>.</p>
+        <p>What do you know about rowing? Take the quiz and learn more in this <a href="https://en.wikipedia.org/wiki/Rowing_(sport)" target="_blank">Wikipedia article</a>.</p>
       </div>
+    </div>
 
 
-
-      <form class="mx-auto">
+   <form id="myForm" action="form_processor.js" method="post" class="mx-auto">
 
         <div class ="mb-3">
 
-          <label for="stateAnswer" class="form-label ">Which state was the earliest American rowing race in?</label>
-          <input id="stateAnswer" name="stateAnswer" class= "form-text" type="text">
+          <label for="stateAnswer" class="form-label">Which state held the earliest American rowing race?</label>
+          <input id="stateAnswer" name="answerOne" class= "form-control" type="text">
 
         </div>
 
         <div class ="mb-3">
 
-          <label for="rowingName" class="form-label">What is rowing sometimes called in the United States?</label>
-          <input id="rowingName" name="stateAnswer" class= "form-text" type="text">
+          <label for="rowingName" class="form-label">What is another name for rowing in the United States?</label>
+          <input id="rowingName" name="answerTwo" class= "form-control" type="text">
 
         </div>
 
         <div class ="mb-3">
 
           <div class="form-group">
-            <label for="techniqueAnswer">What is proper rowing technique? Please describe each step.</label>
-            <textarea class="form-control" id="techniqueAnswer" name="techniqueAnswer" rows="3"></textarea>
+            <label for="techniqueAnswer">What is the proper technique for rowing? Please describe each step.</label>
+            <textarea class="form-control" id="techniqueAnswer" name="Answers may vary" rows="3"></textarea>
           </div>
         </div>
 
         <div class ="mb-3">
 
-          <p>Where did modern rowing as a competitive sport originate?</p>
+          <p>Where did modern competitive rowing originate?</p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="originRadio" id="flexRadio1">
+            <input class="form-check-input" type="radio" name="River Thames in London" id="flexRadio1">
             <label class="form-check-label" for="flexRadio1">
               Hudson River in New York
             </label>
@@ -105,7 +106,7 @@
         <div class ="mb-3">
 
 
-          <p>What was the first American college to form a rowing club?</p>
+          <p>Which was the first American college to form a rowing club?</p>
           <select class="form-select">
             <option selected>Choose your answer</option>
             <option value="Harvard University">Harvard University</option>
@@ -130,6 +131,8 @@
 
 
   </form>
+
+  <div id="showAnswers"></div>
 
 
 </body>
