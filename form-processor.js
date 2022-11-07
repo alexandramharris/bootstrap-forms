@@ -36,11 +36,11 @@ let userAnswers = {};
 
 const correctAnswers = {
         // replace all lines below, as many or as few as you need
-    text: "New York",
-    text: "Crew",
-    textarea: "Answers may vary",
-    radio: "River Thames in London",
-    checkbox: [ "Sweep rowing", "Sculling" ],
+    answerOne: "New York",
+    answerTwo: "Crew",
+    answerThree: "Answers may vary",
+    originRadio: "River Thames in London",
+    twoWays: [ "Sweep rowing", "Sculling" ],
     select: "Yale University"
         // stop here - you can have more lines if yur quiz has more answers
 };
